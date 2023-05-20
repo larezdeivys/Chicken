@@ -1,0 +1,199 @@
+@media screen and (min-width: 750px){
+	.welcome .divWelcome{
+		width: 90%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1rem;
+	}
+	.divWelcome .text{
+		width: 90%;
+		margin: auto;
+		padding-top: 3rem;
+	}
+	.sec2 .div2{
+		width: 40%;
+		margin-left: 5%;
+	}
+	.sec2 .sec2Colum{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1.5rem;
+	}
+	.sec2{
+		padding-bottom: 25rem;
+	}
+	.divSec3 .h1{
+		width: 70%;
+	}
+	.divsec4 .grip{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1rem;
+	}
+	.divsec4 .grip:nth-child(2){
+		display: grid;
+		grid-template-columns: [cambiar-start] 1fr [cambiar-end] 1fr;
+		grid-template-rows: [cambiar-start] 1fr [cambiar-end];
+	}
+	.divsec4 .grip:nth-child(2) .conteneimg{
+		grid-area: cambiar;
+	}
+	.grip .conteneimg{
+		margin-right: 0;
+	}
+	.grip .img2{
+		margin-left: 0;
+	}
+	.slider{
+		height: 50rem;
+	}
+	.slide-contenedor{
+		width: 80%;
+	}
+	.miSlider .img{
+		width: 8rem;
+		max-height: 8rem;
+	}
+	.sombreado{
+		height: 50rem;
+	}
+	.sec6 .divsec6{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1rem;
+	}
+	.footer{
+		padding: 8rem 0;
+	}
+	.footer .foo{
+		width: 90%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 2rem;
+	}
+	.foo .chicken{
+		margin-top: 1rem;
+	}
+	/*Pagina de about*/
+	.navbarabout .ulabout{
+		background-color: transparent;
+	}
+	.navbarabout .ulabout .liabout .aabout{
+		color: white;
+	}
+}
+@media screen and (min-width: 1000px){
+	.navbar .img2{
+		display: none;
+	}
+	.navbar .enlaces{
+		display: block;
+		width: 100%;
+		transform: translateY(0);
+		width: fit-content;
+		position: relative;
+		top: 0;
+		left: 0;
+		overflow: visible;
+	}
+	.enlaces ul{
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		margin-right: 5%;
+		transform: translateY(0);
+		width: fit-content;
+	}
+	.enlaces ul li{
+		margin: 0 .5rem;
+		margin-top: 1rem;
+		padding: 0;
+	}
+	.enlace ul li a{
+		color: black;
+		padding: 0;
+	}
+	.divSec3 .h1{
+		width: 60%;
+	}
+}
+@media screen and (min-width: 1200px){
+	.grip .conteneimg{
+		width: 80%;
+	}
+	.footer .foo{
+		width: 80%;
+	}
+}
+@media screen and (min-width: 1400px){
+	.divHeader .h1{
+		width: 60%;
+		margin: auto;
+		font-size: 3.5rem;
+	}
+	.welcome .divWelcome{
+		width: 80%;
+		margin: auto;
+	}
+	.text span{
+		font-size: 2.5rem;
+	}
+	.text .h1{
+		font-size: 2.5rem;
+	}
+	.sec2 .div2{
+		width: 40%;
+		margin-left: 10%;
+	}
+	.div2 span{
+		font-size: 2.5rem;
+	}
+	.div2 .h1{
+		font-size: 2.5rem;
+	}
+	.sec2 .sec2Colum{
+		width: 80%;
+	}
+	.divSec3{
+
+		padding: 6rem 0;
+	}
+	.divSec3 .h1{
+		width: 40%;
+	}
+	.sec4 .divsec4{
+		width: 80%;
+	}
+	.grip .conteneimg{
+		width: 80%;
+		margin: auto;
+		margin-right: 0;
+	}
+	.grip .img2{
+		margin-left: 0;
+	}
+	.sec6 .divsec6{
+		width: 80%;
+	}
+	.footer .foo{
+		width: 70%;
+	}
+}
+@media screen and (min-width: 1600px){
+	.sec2 .div2{
+		margin-left: 15%;
+	}
+	.sec2 .sec2Colum{
+		width: 70%;
+	}
+	.sec4 .divsec4{
+		width: 70%;
+	}
+	.slide-contenedor{
+		width: 70%;
+	}
+	.sec6 .divsec6{
+		width: 70%;
+		grid-gap: 2rem;
+	}
+}

@@ -1,0 +1,127 @@
+.headercontact{
+	background-image: url(../assets/images/contact-bg.jpg);
+}
+/*-------------------------------------------------*/
+.informa{
+	width: 90%;
+	margin: auto;
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+}
+.informa .iconoama{
+	width: 2rem;
+}
+.iconoama .img{
+	width: 100%;
+}
+
+.informa .textcont{
+	width: 100%;
+	padding-top: .5rem;
+	margin-left: .5rem;
+}
+.textcont .h3{
+	font-size: 1rem;
+}
+.textcont .p{
+	font-size: 1rem;
+}
+
+/*-------------------------------------------------*/
+.leaby{
+	margin-top: 0;
+	background-color: white;
+	outline: none;
+	border: none;
+	padding: 1rem 0;
+}
+.leaby .inputs{
+	width: 90%;
+	margin: auto;
+}
+.inputs input{
+	font-size: .9rem;
+	border: 1px solid rgba(150, 155, 255, .3);
+}
+.texta{
+	width: 80%;
+	margin: auto;
+}
+.texta textarea{
+	width: 100% !important;
+	height: 10rem !important;
+	margin: auto;
+	font-size: 1rem;
+	padding-top: .5rem;
+	padding-left: .5rem;
+	outline: none;
+	border: none;
+	border: 1px solid rgba(150, 155, 255, .3);
+}
+.texta .btn{
+	width: 10rem;
+	height: 2.5rem;
+	padding: 0 1rem;
+	background-color: rgb(255, 182, 6);
+	border: 1px solid rgb(255, 182, 6);
+	margin-top: 1rem;
+	transition: .3s;
+	margin-bottom: 5rem;
+}
+.texta .btn:hover{
+	background-color: white;
+}
+@media screen and (min-width: 450px){
+	.doscolum{
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.texta{
+		margin: auto;
+		margin-top: 2rem;
+	}
+}
+@media screen and (min-width: 700px){
+	.columnas{
+		width: 100%;
+		padding-top: 5rem;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-gap: .5rem;
+	}
+	.informa{
+		margin-top: 2rem;
+	}
+}
+@media screen and (min-width: 1000px){
+	.columnas{
+		width: 90%;
+		margin: auto;
+	}
+}
+@media screen and (min-width: 1200px){
+	.columnas{
+		width: 80%;
+		margin: auto;
+	}
+}
+@media screen and (min-width: 1400px){
+	.columnas{
+		width: 70%;
+		margin: auto;
+	}
+}
+@media screen and (min-width: 1600px){
+	.columnas{
+		width: 60%;
+		margin: auto;
+	}
+}
+@media screen and (min-width: 1800px){
+	.columnas{
+		width: 50%;
+		margin: auto;
+	}
+}

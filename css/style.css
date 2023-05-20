@@ -1,0 +1,730 @@
+@font-face{
+	font-family: 'font';
+	src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf');
+}
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'font';
+}
+span{
+	color: rgb(255, 182, 6);
+}
+p{
+	color: rgb(119, 119, 119);
+}
+
+/*NAVBAR-----------------------------------------------------------------------------*/
+.navbar{
+	width: 100%;
+	height: 6rem;
+	background-color: white;
+	margin-top: 2rem;
+	position: absolute;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 5;
+}
+.navbar .img{
+	margin-left: 5%;
+}
+.navbar .img2{
+	margin-right: 5%;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.navbar .enlaces{
+	position: absolute;
+	top: 6rem;
+	left: 0;
+	width: 100%;
+	transform: translateY(-100%);
+	transition: .5s;
+	overflow: hidden;
+}
+.enlaces ul{
+	display: block;
+	width: 100%;
+	height: 100%;
+	transform: translateY(100%);
+	transition: .5s;
+	background-color: #eee;
+}
+.navbar .enlaces-ul{
+	transform: translateY(0);
+}
+.enlaces ul li{
+	padding: 1rem;
+	position: relative;
+}
+
+.enlaces ul li:hover ol{
+	display: block;
+
+}
+.enlaces ol{
+	width: 13rem;
+	padding-bottom: 1rem;
+	position: absolute;
+	background-color: white;
+	top: 2rem;
+	left: 0;
+	display: none;
+	z-index: 30;
+	transition: .5s;
+}
+.enlaces ol li a:hover{
+	color: rgb(255, 182, 6);
+}
+.enlaces ol li{
+	padding: 0;
+	list-style: none;
+}
+.enlaces ul li a{
+	color: black;
+	padding: 1rem;
+}
+/*HEADER------------------------------------------------------------------------------------*/
+.header{
+	width: 100%;
+	height: 40rem;
+	background-image: url(../assets/images/banner-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+.divHeader{
+	width: 90%;
+	margin: auto;
+	z-index: 1;
+}
+.divHeader .p{
+	width: 100%;
+	color: white;
+	font-size: 1rem;
+	text-align: center;
+}
+.divHeader .h1{
+	width: 100%;
+	color: white;
+	font-size: 3.2rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+/*SECCION 1--------------------------------------------------------------*/
+.welcome{
+	width: 100%;
+	height: auto;
+	padding: 3rem 0;
+}
+.welcome .divWelcome{
+	width: 80%;
+	margin: auto;
+}
+.divWelcome .imgwel{
+	width: 100%;
+	padding-top: 3rem;
+}
+.imgwel .img{
+	width: 100%;
+	height: auto;
+}
+.divWelcome .text{
+	width: 100%;
+	padding-top: 3rem;
+}
+.text span{
+	font-size: 2rem;
+}
+.text .h1{
+	width: 100%;
+	font-size: 2rem;
+}
+.text .p{
+	width: 100%;
+	font-size: 1rem;
+	padding-top: 1rem;
+}
+.text .bntwel{
+	width: 10rem;
+	height: 2.5rem;
+	margin: auto;
+	margin-top: 2rem;
+	border: 1px solid rgb(255, 182, 6);
+	background-color: rgb(255, 182, 6);
+	color: black;
+	cursor: pointer;
+}
+.text .bntwel:hover{
+	background-color: white;
+	transition: .3s;
+}
+/*SECCION 2-------------------------------------------------------------*/
+.sec2{
+	width: 100%;
+	height: auto;
+	padding: 5rem 0;
+	background-image: url(../assets/images/food-bg.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+}
+.sec2 .div2{
+	width: 80%;
+	margin: auto;
+}
+.div2 span{
+	font-size: 2rem;
+}
+.div2 .h1{
+	font-size: 2rem;
+	margin-top: .5rem;
+}
+.div2 .p{
+	font-size: 1rem;
+	margin-top: 2rem;
+}
+/*-------------*/
+.sec2 .sec2Colum{
+	width: 90%;
+	height: auto;
+	margin: auto;
+}
+.sec2Colum .contenImg{
+	width: 100%;
+	margin-top: 4rem;
+	padding-bottom: 2rem;
+	background-color: rgb(249, 249, 255);
+}
+.sec2Colum .contenImg:hover{
+	background-color: rgb(255, 182, 6);
+}
+.contenImg .image{
+	width: 100%;
+	overflow: hidden;
+}
+.contenImg .img{
+	width: 100%;
+	transition: .3s;
+}
+.sec2Colum .h1{
+	width: 80%;
+	margin: auto;
+	margin-top: 1.5rem;
+	font-size: 1.3rem;
+
+	display: flex;
+	justify-content: space-between;
+}
+.sec2Colum .span{
+	font-size: 1.3rem;
+}
+.sec2Colum .p{
+	width: 80%;
+	margin: auto;
+	margin-top: 1.5rem;
+	font-size: 1rem;
+}
+.sec2Colum .p{
+	color: black;
+}
+.contenImg:hover .img{
+	transform: scale(1.1);
+}
+.contenImg:hover .span{
+	color: black;
+}
+/*SECCION 3-----------------------------------------------------------------------------*/
+.sec3{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 2rem 0;
+
+	background-image: url(../assets/images/reservation-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+.divSec3{
+	width: 80%;
+	margin: auto;
+
+	
+}
+.divSec3 .h1{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	font-size: 2.5rem;
+	color: white;
+}
+.divSec3 .p{
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	color: white;
+	padding-top: 2rem;
+}
+.divSec3 .divbtn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.divSec3 .btnsec3{
+	width: 9rem;
+	height: auto;
+	border: 1px solid rgb(255, 182, 6);
+	background-color: rgb(255, 182, 6);
+	margin: auto;
+	margin-top: 2rem;
+	padding: .7rem 1rem;
+	color: black;
+	cursor: pointer;
+}
+.divSec3 .btnsec3:hover{
+	background-color: transparent;
+	color: rgb(255, 182, 6);
+	transition: .3s;
+}
+/*SECCION 4--------------------------------------------------------------------*/
+.sec4{
+	width: 100%;
+	height: auto;
+	padding: 4rem 0;
+}
+.sec4 .h1{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	font-size: 2rem;
+	padding-top: 4rem;
+}
+.sec4 .p{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	font-size: 1rem;
+}
+.sec4 .divsec4{
+	width: 90%;
+	margin: auto;
+}
+.divsec4 .grip{
+	width: 100%;
+	padding-top: 3rem;
+}
+.grip .num{
+	width: 100%;
+	text-align: left;
+	font-size: 3.5rem;
+}
+.grip .raya{
+	width: 100%;
+	position: relative;
+	top: -1rem;
+	left: 1rem;
+	border-bottom: 1px solid black;
+	color: transparent;
+}
+.grip .span{
+	width: 100;
+	text-align: left;
+	font-size: 2rem;
+}
+.grip .h1{
+	width: 100%;
+	text-align: left;
+	padding-top: .5rem;
+}
+.grip .p{
+	width: 100%;
+	text-align: left;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+.grip .aa{
+	margin-top: 1.5rem;
+}
+.grip .a{
+	width: 100%;
+	text-align: left;
+	color: black;
+	padding: .5rem 1rem;
+	position: relative;
+	right: 1rem;
+}
+.grip .a:hover{
+	background-color: rgba(255, 186, 6, .8);
+}
+.grip .conteneimg{
+	width: 100%;
+	margin-top: 2rem;
+}
+.conteneimg .img{
+	width: 100%;
+}
+/*SECCION 5----------------------------------------------------------------------*/
+.slider{
+	width: 100%;
+	height: 60rem;
+
+	background-image: url(../assets/images/food6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.slider .h1{
+	width: 80%;
+	margin: auto;
+	font-size: 2rem;
+	text-align: center;
+	padding-top: 4rem;
+	z-index: 5;
+	color: white;
+}
+.slider .p{
+	width: 80%;
+	margin: auto;
+	font-size: 1rem;
+	text-align: center;
+	z-index: 5;
+	color: white;
+	padding-top: 1rem;
+}
+.sombreado{
+	width: 100%;
+	height: 60rem;
+	background-color: rgba(0, 0, 0, .7);
+}
+.slide-contenedor{
+	width: 90%;
+	height: auto;
+	margin: auto;
+	margin-top: 3rem;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+	padding: 4rem 0;
+	background-image: url(../assets/images/quote.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top;
+}
+.miSlider .p{
+	width: 70%;
+	font-size: 1.3rem;
+	color: rgb(123, 135, 116);
+	margin: auto;
+	text-align: center;
+}
+.miSlider .h3{
+	width: 100%;
+	text-align: center;
+	font-size: 1.6rem;
+	color: black;
+	margin-top: 1.5rem;
+}
+.miSlider .p2{
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	color: rgb(123, 135, 106);
+	margin-top: 1rem;
+}
+.miSlider .cimg{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.miSlider .img{
+	width: 10rem;
+	max-height: 10rem;
+	height: inherit;
+	margin: auto;
+	object-fit: cover;
+	vertical-align: top;
+	transition: 2s;
+	border-radius: 50%;
+}
+.barras{
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	z-index: 20;
+}
+.barra{
+	cursor: pointer;
+	height: .2rem;
+	width: 2rem;
+	margin: 0 2px;
+	background: #dcdde1;
+	display: inline-block;
+	margin-left: 3px;
+	z-index: 30;
+}
+.active{
+	background: rgb(255, 184, 6);
+}
+.fade{
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	0% { opacity: .4; }
+	100% { opacity: 1; }
+}
+
+/*SECCION 6---------------------------------------------------------------------------*/
+.sec6{
+	width: 100%;
+	height: auto;
+	padding: 5rem 0;
+}
+.sec6 .h1{
+	width: 80%;
+	margin: auto;
+	font-size: 2rem;
+	text-align: center;
+}
+.sec6 .p{
+	width: 80%;
+	margin: auto;
+	font-size: 1rem;
+	text-align: center;
+	padding-top: 2rem;
+}
+.sec6 .divsec6{
+	width: 90%;
+	margin: auto;
+	margin-top: 2rem;
+}
+.divsec6 .contenedor6{
+	width: 100%;
+	height: auto;
+	background-color: rgb(249, 249, 255);
+	margin-top: 2rem;
+}
+.divsec6 .contenedor6:hover{
+	background-color: white;
+	box-shadow: 2px 2px 5px 1px rgba(149, 149, 155, .2), -2px 2px 5px 1px rgba(149, 149, 155, .2);
+}
+.contenedor6 .conimg{
+	width: 100%;
+}
+.conimg .img{
+	width: 100%;
+	height: auto;
+}
+.contenedor6 .abmi{
+	width: 80%;
+	margin: auto;
+	padding-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+.contenedor6 .abmi2{
+	margin-right: 2rem;
+}
+.contenedor6 .cln{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+}
+.abmi .icon{
+	width: 1.8rem;
+}
+.abmi .p1{
+	width: 100%;
+	font-size: 1rem;
+	padding-top: .4rem;
+	margin-left: 1rem;
+}
+.contenedor6 .h11{
+	width: 80%;
+	margin: auto;
+	font-size: 1.2rem;
+	padding-top: 1rem;
+}
+.contenedor6 .p2{
+	width: 80%;
+	margin: auto;
+	padding-top: 1rem;
+}
+.contenedor6 .boton{
+	width: 100%;
+	margin: auto;
+}
+.contenedor6 button{
+	width: 9rem;
+	height: 2.5rem;
+	margin-top: 1rem;
+	border: none;
+	
+	background-color: transparent;
+	color: black;
+	cursor: pointer;
+}
+.contenedor6 button:hover{
+	border: 1px solid rgb(255, 182, 6);
+	background-color: rgba(255, 182, 6, .7);
+}
+/*FOOTER*/
+.footer{
+	width: 100%;
+	height: auto;
+	padding: 5rem 0;
+	background-color: rgb(19, 18, 48);
+}
+.footer .foo{
+	width: 80%;
+	margin: auto;
+}
+
+.foo .chicken{
+	width: 100%;
+	margin-top: 2rem;
+}
+.foo .contactus{
+	width: 100%;
+	margin-top: 2rem;
+}
+.foo .hours{
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.chicken .favi{
+	width: 100%;
+}
+.favi .img{}
+.chicken .p{
+	width: 100%;
+	text-align: left;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+.contactus .span{
+	width: 100%;
+	font-size: 1.5rem;
+}
+.contactus .inline{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+.contactus .icono{
+	width: 1.8rem;
+	height: 1.8rem;
+}
+.contactus .icono2{
+	width: 1.8rem;
+	height: 1.8rem;
+}
+.contactus .p{
+	width: 100%;
+	font-size: 1rem;
+}
+.contactus .p1{
+	padding-top: .3rem;
+	margin-left: 1rem;
+}
+.contactus .p2{
+	padding-top: .4rem;
+	margin-left: 1rem;
+}
+.contactus .p3{
+	margin-left: 1rem;
+}
+
+.hours .span{
+	width: 100%;
+	font-size: 1.5rem;
+}
+.hours .p{
+	padding-top: 1rem;
+	font-size: 1rem;
+}
+.copy{
+	width: 100%;
+	height: auto;
+	background-color: black;
+}
+.copy h1{
+	width: 100%;
+	font-size: 1rem;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+
+/*@ PAGINA DE ABOUT @ __________________________________________________________________@*/
+
+.navbarAbout{
+	background-color: transparent;
+}
+.enlaces ul{
+	display: block;
+	width: 100%;
+	height: 100%;
+	transform: translateY(100%);
+	transition: .5s;
+	background-color: white;
+}
+.headerabout{
+	background-image: url(../assets/images/about-bg.jpg);
+	position: relative;
+}
+.divHeader .pabout{
+	padding-top: 2rem;
+}
+.sombraabout{
+	background-color: rgba(0, 0, 0, .7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.sliderabout{
+	background-image: url(../assets/images/testimonial-bg.jpg);
+}
+.footerabout{
+	background-color: rgb(249, 249, 255);
+}
+.spanabout{
+	color: black;
+}
+.copy2{
+	background-color: rgb(249, 249, 255);
+}
+.copy2 span{
+	color: black;
+
+}
+
+/*@ Pagina de menu @ ____________________________________________________________________@*/
+.headermenu{
+	background-image: url(../assets/images/menu-bg.jpg);
+}
